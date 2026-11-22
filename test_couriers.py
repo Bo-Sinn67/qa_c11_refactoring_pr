@@ -28,7 +28,7 @@ class TestCourierHelpers:
 
     def test_get_courier_by_id(self, client):
         """Получение курьера с id=1 (зашит в fake_api)."""
-        courier = client.get_courier_by_id(5)
+        courier = client.get_courier_by_id(1)
         assert courier["id"] == 1
         assert courier["first_name"] == "Иван"
 
